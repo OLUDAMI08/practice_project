@@ -5,8 +5,10 @@ const inputcharEl = document.querySelector(".textarea");
 inputcharEl.addEventListener("keyup", () => {
   updateCounter();
 });
+updateCounter();
 
 function updateCounter() {
   totalcharEl.innerText = inputcharEl.value.length;
-  remainingcharEl.innerText = 50 - totalcharEl.innerText;
+  remainingcharEl.innerText =
+    inputcharEl.getAttribute("maxLength") - totalcharEl.innerText;
 }
