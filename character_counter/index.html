@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Character counter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-counter">
+      <h2>Real time character counter</h2>
+      <!-- <div class="conter-word">Total counter:<span>50</span></div> -->
+      <textarea
+        placeholder="Please write your text here"
+        id="textarea"
+        class="textarea"
+        maxlength="50"
+      ></textarea>
+      <div class="char-container">
+        <div class="total-char">
+          Total character: <span class="total-digit">50</span>
+        </div>
+        <div class="remaining-char">
+          Remaining character: <span class="remaining-digit">20</span>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
